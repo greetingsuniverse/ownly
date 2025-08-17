@@ -3,6 +3,15 @@
 import * as Y from 'yjs';
 
 import { StoreDexie, type StoreJS } from '@/services/database/store_js';
+
+import DBFactory from "indexed-db.es6/es2015/DBFactory.js";
+
+const indexedDB = new DBFactory();
+const IDBKeyRange = indexedDB.constructor.IDBKeyRange; // or similar export
+
+globalThis.indexedDB = indexedDB;
+globalThis.IDBKeyRange = IDBKeyRange;
+
 import { KeyChainDexie, type KeyChainJS } from '@/services/database/keychain_js';
 import { GlobalBus } from '@/services/event-bus';
 

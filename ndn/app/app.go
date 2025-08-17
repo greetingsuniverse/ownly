@@ -67,7 +67,7 @@ func NewNodeApp() *App {
 	// NodeApp currently only supports consumer mode.
 	// If we want producer mode, we need a real store implementation.
 	// FS already works but badger may be too slow.
-	store := storage.NewMemoryStore()
+	store := storage.NewJsStore(_ndnd_store_js)
 
 	// Setup directory keychain
 	// TODO: make this path configurable, maybe env variable

@@ -17,6 +17,7 @@
     "go:js": "cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./public/wasm_exec.js"
   },
   "dependencies": {
+    "@a2a-js/sdk": "^0.3.1",
     "@dicebear/collection": "^9.2.2",
     "@dicebear/core": "^9.2.2",
     "@excalidraw/excalidraw": "^0.18.0",
@@ -31,8 +32,10 @@
     "bulma": "^1.0.3",
     "dexie": "^4.0.11",
     "events": "^3.3.0",
+    "express": "^4.21.2",
     "file-system-access": "^1.0.4",
     "highlight.js": "^11.11.1",
+    "indexed-db.es6": "^1.0.0",
     "lodash-es": "^4.17.21",
     "marked": "^15.0.11",
     "marked-highlight": "^2.2.1",
@@ -43,6 +46,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "reveal.js": "^5.2.1",
+    "sqlite3": "^5.1.7",
     "streamsaver": "^2.0.6",
     "vue": "^3.5.13",
     "vue-pdf-embed": "^2.1.2",
